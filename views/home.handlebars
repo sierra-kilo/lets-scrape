@@ -1,0 +1,13 @@
+<div class="jumbotron jumbotron-fluid bg-default">
+  <div class="container">
+    <h1 class="display-3">News Scrapper</h1>
+    <p>Latest Articles</p>
+    <a href="/" class="btn btn-info">Get news</a>
+    <a href="/saved" class="btn btn-success">Favorites</a>
+  </div>
+</div>
+<main class="container-fluid" id="linkspace">
+  {{#each articles}}
+    {{> article}}
+  {{/each}}
+</main>
